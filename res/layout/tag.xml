@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    >
+	<RelativeLayout android:id="@+id/TableLayout0111"
+		 android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginTop="25dp"
+		>
+		<TextView android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp" android:id="@+id/lblTitle"
+			android:text="TagIt" android:layout_width="wrap_content"
+			android:textColor="#000000" android:textSize="32dp" android:textStyle="bold"
+			
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+			android:layout_marginTop="30dp" android:id="@+id/lblQTitle"
+			android:text="TagIt" android:layout_width="wrap_content"
+			android:textColor="#000000" android:textSize="16dp" android:textStyle="bold"
+			android:layout_below="@+id/lblTitle"
+			android:layout_height="wrap_content"></TextView>
+			<EditText android:layout_marginLeft="5dp"
+			android:layout_marginTop="0dp" android:id="@+id/txtQuestion"
+			android:text="" android:layout_width="fill_parent"
+			
+			android:layout_height="wrap_content"
+			
+			android:background="@drawable/rectc"
+			android:textColor="#000000" android:textSize="16dp" android:textStyle="bold"
+			android:layout_below="@+id/lblQTitle">
+			</EditText>
+	
+
+
+	
+		<Button android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnProductBarcode" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Barcode" android:layout_below="@+id/txtQuestion" android:textSize="24dp"
+			android:background="@drawable/buttons"
+				android:textColor="#ffffff"
+			></Button>
+			<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/btnProductBarcode"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnQRBarcode" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="QR Tag"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:background="@drawable/buttons"
+			></Button>
+			<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/btnQRBarcode"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnReview" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Reveiw Image"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:visibility="gone"
+			android:background="@drawable/buttons"
+			></Button>
+			
+			<Button android:layout_marginTop="25dp"
+			android:layout_below="@+id/btnReview"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnNext" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Next"  android:textSize="24dp"
+			
+			></Button>
+
+		<ListView android:id="@id/android:list"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:visibility="gone"
+              android:drawSelectorOnTop="false"/>
+	</RelativeLayout>
+
+</LinearLayout>

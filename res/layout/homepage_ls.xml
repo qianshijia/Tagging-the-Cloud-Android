@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#E2E2E2"
+  android:id="@+id/homeLayout"
+  android:orientation="vertical">
+	  <RelativeLayout 
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_alignParentTop="true"
+	  	android:background="@drawable/topmenu"
+	  	android:id="@+id/topMenu">
+	  	<Button 
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="35dp"
+	  		android:text="Scan Tag"
+	  		android:textSize="13dp"
+	  		android:layout_marginTop="3dp"
+	  		android:layout_alignParentLeft="true"
+	  		android:id="@+id/topScanBtn"
+	  	/>
+	  	<Button 
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="35dp"
+	  		android:text="DashBoard"
+	  		android:textSize="13dp"
+	  		android:layout_marginTop="3dp"
+	  		android:layout_alignParentRight="true"
+	  		android:id="@+id/topBackBtn"
+	  		android:visibility="gone"
+	  	/>
+	  </RelativeLayout>
+	<LinearLayout 
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+	    <GridView    
+	    android:id="@+id/gridview"  
+	    android:layout_width="fill_parent"   
+	    android:layout_height="wrap_content"   
+		android:numColumns="2"
+	    android:verticalSpacing="10dp" 
+	    android:horizontalSpacing="5dp"
+		android:layout_marginTop="5dp"
+		android:layout_weight="1"
+	    /> 
+		<TextView 
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:text="hello world"
+		android:textColor="#000"
+		android:layout_weight="2"
+		android:gravity="center"
+		/>
+	</LinearLayout>
+</LinearLayout>
+

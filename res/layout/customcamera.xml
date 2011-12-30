@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent" android:layout_width="fill_parent"
+  android:orientation="vertical">
+  <LinearLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/menubar"
+  	android:layout_alignParentTop="true"
+  	android:layout_weight="9"></LinearLayout>
+  	
+  <SurfaceView android:layout_width="fill_parent" 
+  	android:id="@+id/surface_camera" 
+  	android:layout_height="fill_parent"
+  	android:layout_alignParentTop="true"
+  	android:layout_weight="2">
+  </SurfaceView>
+  <LinearLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="1px"
+  	android:background="#606060"></LinearLayout>
+  <RelativeLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/menubar"
+  	android:layout_alignParentBottom="true"
+  	android:layout_weight="9">
+  	<Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="OK"
+  	android:layout_alignParentLeft="true"
+  	android:layout_marginLeft="10dp"
+  	android:background="@drawable/ok_btn"
+  	android:layout_centerVertical="true"
+  	android:visibility="gone"
+  	android:id="@+id/okbtn"
+  	android:textColor="#000"/>
+  	<ImageButton 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:id="@+id/capture"
+  	android:background="@drawable/capture_button"
+  	android:layout_centerInParent="true"
+  	android:src="@drawable/capture"
+  	android:textColor="#000"/>
+  	
+  	<Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="CANCEL"
+  	android:layout_alignParentRight="true"
+  	android:layout_marginRight="5dp"
+  	android:background="@drawable/cancel_btn"
+  	android:layout_centerVertical="true"
+  	android:id="@+id/cancelbtn"
+  	android:textColor="#fff"/>
+  	<Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="RETAKE"
+  	android:layout_toLeftOf="@id/cancelbtn"
+  	android:layout_marginRight="5dp"
+  	android:background="@drawable/cancel_btn"
+  	android:layout_centerVertical="true"
+  	android:id="@+id/retakebtn"
+  	android:visibility="gone"
+  	android:textColor="#fff"/>
+  	</RelativeLayout>
+  	
+  	
+</LinearLayout>

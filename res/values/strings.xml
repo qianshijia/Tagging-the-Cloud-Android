@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TagIt</string>
+    <string name="video_page_msg">Please watch this video and answer the question on the next page.</string>
+    <string name="audio_page_msg">Please listen to this audio and answer the question on the next page.</string>
+</resources>

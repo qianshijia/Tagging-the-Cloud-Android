@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    >
+
+	<RelativeLayout android:id="@+id/TableLayout0111"
+		 android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginTop="25dp"
+		>
+
+		<TextView android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp" android:id="@+id/lblTitle"
+			android:text="TagIt" android:layout_width="wrap_content"
+			android:textColor="#000000" android:textSize="32dp" android:textStyle="bold"
+			android:layout_above="@+id/lblTitle"
+			android:layout_height="wrap_content"></TextView>
+
+		
+	</RelativeLayout>
+
+</LinearLayout>

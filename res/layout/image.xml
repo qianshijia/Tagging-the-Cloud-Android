@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    >
+<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	<RelativeLayout android:id="@+id/TableLayout0111"
+		 android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginTop="25dp"
+		>
+		<TextView android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp" android:id="@+id/lblTitle"
+			android:text="TagIt" android:layout_width="wrap_content"
+			android:textColor="#000000" android:textSize="32dp" android:textStyle="bold"
+			
+			android:layout_height="wrap_content"></TextView>
+			
+				<TextView android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+			android:layout_marginTop="30dp" android:id="@+id/lblQTitle"
+			android:text="TagIt" android:layout_width="wrap_content"
+			android:textColor="#000000" android:textSize="16dp" android:textStyle="bold"
+			android:layout_below="@+id/lblTitle"
+			android:layout_height="wrap_content"></TextView>
+
+<ImageView android:id="@+id/ImageView02" 
+			android:layout_below="@+id/lblQTitle" 
+			android:layout_width="150dp" 
+			android:layout_height="150dp"
+			android:layout_centerInParent="true"
+			android:visibility="gone"></ImageView>
+	
+<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/ImageView02"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnCapture" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="From Camera"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:background="@drawable/buttons"
+			></Button>
+<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/btnCapture"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnOpen" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="From Gallery"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:background="@drawable/buttons"
+			></Button>
+
+<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/btnOpen"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnReview" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Reveiw Image"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:visibility="gone"
+			android:background="@drawable/buttons"
+			></Button>
+<Button android:layout_marginTop="10dp"
+			android:layout_below="@+id/btnReview"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnChooseAgain" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Choose Again"  android:textSize="24dp"
+			android:textColor="#ffffff"
+			android:visibility="gone"
+			android:background="@drawable/buttons"
+			></Button>		
+ <Button android:layout_marginTop="25dp"
+			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+			android:id="@+id/btnNext" android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
+			android:text="Next"  android:textSize="24dp"
+			 android:layout_below="@+id/btnChooseAgain"
+			></Button>
+          
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
