@@ -3,26 +3,66 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#E2E2E2"
+    android:background="#fff"
     >
+    <RelativeLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="60dp"
+  	android:layout_alignParentTop="true"
+  	android:background="#000000"
+  	android:id="@+id/topMenu"
+  	android:gravity="center_vertical">
+  	<ImageButton 
+  		android:layout_height = "wrap_content"
+  		android:layout_width = "wrap_content"
+  		android:src="@drawable/logout_icon30"
+  		android:id="@+id/back"
+  		android:background="#000000"
+  		android:layout_alignParentLeft="true"
+  		android:layout_marginLeft="10dp"
+  		android:layout_marginTop="15dp"/>
+	 <LinearLayout 
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_alignParentRight="true"
+  		android:gravity="center_vertical">
+  		<TextView android:layout_height="wrap_content"
+	  	android:layout_width="wrap_content"
+	  	android:textColor="#3399cc"
+	  	android:textSize="12dp"
+	  	android:text="Tagging the Cloud"
+	  	android:layout_marginTop="10dp"/>
+	  	<ImageView android:layout_height="50dp"
+	  	android:layout_width="50dp"
+		android:src="@drawable/appicon57"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft = "5dp"/>
+	  </LinearLayout>
+  </RelativeLayout>
+  <TextView 
+		android:layout_height = "55dp"
+		android:layout_width = "fill_parent"
+		android:gravity="center"
+		android:background="#3399cc"
+		android:text = "Scanner Mode"
+		android:textColor="#fff"
+		android:textSize = "18dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/topMenu"
+		android:id="@+id/processName"
+		/>
 <ScrollView android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
+		android:layout_height="fill_parent"
+		android:background="#b9d4ef">
 	<RelativeLayout android:id="@+id/TableLayout0111"
 		 android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:layout_marginTop="25dp"
-		>
-		<TextView android:layout_marginLeft="5dp"
-			android:layout_marginTop="10dp" android:id="@+id/lblTitle"
-			android:text="TagIt" android:layout_width="wrap_content"
-			android:textColor="#000000" android:textSize="32dp" android:textStyle="bold"
-			
-			android:layout_height="wrap_content"></TextView>
-			
-				<TextView android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
-			android:layout_marginTop="30dp" android:id="@+id/lblQTitle"
+		android:layout_height="fill_parent" android:layout_marginTop="10dp"
+		>	
+			<TextView android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+			android:layout_marginTop="5dp" android:id="@+id/lblQTitle"
 			android:text="TagIt" android:layout_width="wrap_content"
 			android:textColor="#000000" android:textSize="16dp" android:textStyle="bold"
-			android:layout_below="@+id/lblTitle"
 			android:layout_height="wrap_content"></TextView>
 
 <ImageView android:id="@+id/ImageView02" 
@@ -30,7 +70,8 @@
 			android:layout_width="150dp" 
 			android:layout_height="150dp"
 			android:layout_centerInParent="true"
-			android:visibility="gone"></ImageView>
+			android:src="@drawable/image_default"
+			android:gravity="center"></ImageView>
 	
 <Button android:layout_marginTop="10dp"
 			android:layout_below="@+id/ImageView02"
@@ -39,7 +80,7 @@
 			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
 			android:text="From Camera"  android:textSize="24dp"
 			android:textColor="#ffffff"
-			android:background="@drawable/buttons"
+			android:background="@drawable/nextbtn"
 			></Button>
 <Button android:layout_marginTop="10dp"
 			android:layout_below="@+id/btnCapture"
@@ -48,7 +89,7 @@
 			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
 			android:text="From Gallery"  android:textSize="24dp"
 			android:textColor="#ffffff"
-			android:background="@drawable/buttons"
+			android:background="@drawable/nextbtn"
 			></Button>
 
 <Button android:layout_marginTop="10dp"
@@ -59,7 +100,7 @@
 			android:text="Reveiw Image"  android:textSize="24dp"
 			android:textColor="#ffffff"
 			android:visibility="gone"
-			android:background="@drawable/buttons"
+			android:background="@drawable/nextbtn"
 			></Button>
 <Button android:layout_marginTop="10dp"
 			android:layout_below="@+id/btnReview"
@@ -69,14 +110,16 @@
 			android:text="Choose Again"  android:textSize="24dp"
 			android:textColor="#ffffff"
 			android:visibility="gone"
-			android:background="@drawable/buttons"
+			android:background="@drawable/nextbtn"
 			></Button>		
- <Button android:layout_marginTop="25dp"
+ <Button android:layout_marginTop="20dp"
 			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
 			android:id="@+id/btnNext" android:layout_width="fill_parent"
 			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
 			android:text="Next"  android:textSize="24dp"
 			 android:layout_below="@+id/btnChooseAgain"
+			 android:background="@drawable/nextbtn"
+			 android:textColor="#fff"
 			></Button>
           
 </RelativeLayout>

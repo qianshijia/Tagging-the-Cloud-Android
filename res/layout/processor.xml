@@ -3,15 +3,56 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#E2E2E2"
+    android:background="#fff"
     >
 
-	<TextView android:id="@+id/TableLayout0111"
-		 android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:layout_marginTop="25dp"
-		android:textColor="#000000"
-		android:text="Please Wait...."
+	<RelativeLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="60dp"
+  	android:layout_alignParentTop="true"
+  	android:background="#000000"
+  	android:id="@+id/topMenu"
+  	android:gravity="center_vertical">
+	 <LinearLayout 
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_alignParentRight="true"
+  		android:gravity="center_vertical">
+  		<TextView android:layout_height="wrap_content"
+	  	android:layout_width="wrap_content"
+	  	android:textColor="#3399cc"
+	  	android:textSize="12dp"
+	  	android:text="Tagging the Cloud"
+	  	android:layout_marginTop="10dp"/>
+	  	<ImageView android:layout_height="50dp"
+	  	android:layout_width="50dp"
+		android:src="@drawable/appicon57"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft = "5dp"/>
+	  </LinearLayout>
+  </RelativeLayout>
+  <TextView 
+		android:layout_height = "55dp"
+		android:layout_width = "fill_parent"
+		android:gravity="center"
+		android:background="#3399cc"
+		android:textColor="#fff"
+		android:textSize = "18dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/topMenu"
+		android:id="@+id/processName"/>
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height = "fill_parent"
 		>
-</TextView>
+		<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height = "wrap_content"
+		android:text="Processing...."
+		android:textSize="25dp"
+		android:layout_centerInParent="true"
+		android:textColor="#000"/>
+	</RelativeLayout>
 	
 </LinearLayout>

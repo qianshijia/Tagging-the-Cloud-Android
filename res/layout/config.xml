@@ -1,137 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:background="#E2E2E2"
+  android:background="#fff"
   >
   <RelativeLayout 
   	android:layout_width="fill_parent"
-  	android:layout_height="32dp"
+  	android:layout_height="60dp"
   	android:layout_alignParentTop="true"
-  	android:background="@drawable/topmenu"
-  	android:id="@+id/topMenu">
-  	<LinearLayout 
-  	android:layout_height="wrap_content"
-  	android:layout_width="wrap_content"
-  	android:orientation="horizontal"
-  	android:layout_alignParentLeft="true"
-  	android:layout_centerVertical="true"
+  	android:background="#000000"
+  	android:id="@+id/topMenu"
   	android:gravity="center_vertical">
-  	<ImageView 
-  	android:src="@drawable/arrow_left"
-  	android:layout_width="wrap_content"
-  	android:layout_height="wrap_content"
-  	android:layout_marginLeft="5dp"/>
-	  	<TextView android:layout_height="wrap_content"
-	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
-	  	android:textSize="12dp"
-	  	android:text="Scanner"
-	  	android:layout_marginLeft="5dp"/>
-	 </LinearLayout>
-	  	<TextView android:layout_height="wrap_content"
-	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
-	  	android:textSize="20dp"
-	  	android:textStyle="bold"
-	  	android:text="TagIt"
-	  	android:layout_centerInParent="true"/>
-	  <LinearLayout 
+  	<ImageButton 
+  		android:layout_height = "wrap_content"
+  		android:layout_width = "wrap_content"
+  		android:src="@drawable/logout_icon30"
+  		android:id="@+id/back"
+  		android:background="#000000"
+  		android:layout_alignParentLeft="true"
+  		android:layout_marginLeft="10dp"
+  		android:layout_marginTop="15dp"/>
+	 <LinearLayout 
   		android:layout_height="wrap_content"
   		android:layout_width="wrap_content"
   		android:orientation="horizontal"
   		android:layout_alignParentRight="true"
-  		android:layout_centerVertical="true"
-  		android:gravity="center_vertical"> 		
-	  	<TextView android:layout_height="wrap_content"
+  		android:gravity="center_vertical">
+  		<TextView android:layout_height="wrap_content"
 	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
+	  	android:textColor="#3399cc"
 	  	android:textSize="12dp"
-	  	android:text="Options"
-	  	android:layout_marginRight="5dp"/>
-	  	<ImageView 
-	  	android:src="@drawable/arrow_right"
-	  	android:layout_width="wrap_content"
-	  	android:layout_height="wrap_content"
-	  	android:layout_marginRight="5dp"/>
+	  	android:text="Tagging the Cloud"
+	  	android:layout_marginTop="10dp"/>
+	  	<ImageView android:layout_height="50dp"
+	  	android:layout_width="50dp"
+		android:src="@drawable/appicon57"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft = "5dp"/>
 	  </LinearLayout>
   </RelativeLayout>
   <TextView 
-  		android:layout_width="fill_parent"
-  		android:layout_height="wrap_content"
-  		android:text="Settings"
-  		android:textSize="20dp"
-  		android:textColor="#000"
-  		android:layout_marginLeft="8dp"
-  		android:layout_marginTop="5dp"/>
+		android:layout_height = "55dp"
+		android:layout_width = "fill_parent"
+		android:gravity="center"
+		android:background="#3399cc"
+		android:text = "Settings"
+		android:textColor="#fff"
+		android:textSize = "18dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/topMenu"
+		android:id="@+id/processName"/>
   <ScrollView 
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
-  	android:paddingLeft="5dp"
-  	android:paddingRight="5dp" android:layout_marginTop="8dp"
-  	android:id="@+id/config_layout">
+	android:layout_marginTop="5dp"
+  	android:id="@+id/config_layout"
+  	android:background="#b9d4ef"
+  	android:layout_below="@+id/processName">
   	<LinearLayout 
   		android:layout_width="fill_parent"
   		android:layout_height="wrap_content"
   		android:orientation="vertical"
-  		android:background="@drawable/settings_bg"
   		android:paddingLeft="5dp"
   		android:paddingRight="5dp"
   		android:paddingBottom="5dp">
-  		<LinearLayout 
-	  		android:layout_width="fill_parent"
-	  		android:layout_height="wrap_content"
-	  		android:orientation="vertical"
-	  		android:gravity="center"
-	  		android:layout_marginTop="5dp">
-		  	<LinearLayout 
-		  		android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:orientation="horizontal"
-		  		android:gravity="center">
-		  		<TextView 
-		  			android:layout_width="fill_parent"
-		  			android:layout_height="wrap_content"
-		  			android:layout_weight="2"
-		  			android:paddingLeft="5dp"
-		  			android:text="Username:"
-		  			android:textColor="#000"
-		  			android:textSize="18dp">
-		  		</TextView>
-		  		<EditText 
-		  			android:id="@+id/uname"
-		  			android:layout_width="fill_parent"
-		  			android:layout_height="wrap_content"
-		  			android:layout_weight="1"
-		  			android:textColor="#000"
-		  			android:textSize="18dp"/>
-		  	</LinearLayout>
-		  	<LinearLayout 
-		  		android:layout_width="fill_parent"
-		  		android:layout_height="wrap_content"
-		  		android:orientation="horizontal"
-		  		android:gravity="center">
-		  		<TextView 
-		  			android:layout_width="fill_parent"
-		  			android:layout_height="wrap_content"
-		  			android:layout_weight="2"
-		  			android:paddingLeft="5dp"
-		  			android:text="Password:"
-		  			android:textColor="#000"
-		  			android:textSize="18dp">
-		  		</TextView>
-		  		<EditText 
-		  			android:id="@+id/pswd"
-		  			android:layout_width="fill_parent"
-		  			android:layout_height="wrap_content"
-		  			android:layout_weight="1"
-		  			android:textColor="#000"
-		  			android:textSize="18dp"
-		  			android:password="true"/>
-		  	</LinearLayout>
-	  	</LinearLayout>
 	  	<LinearLayout 
 	  		android:layout_width="fill_parent"
 	  		android:layout_height="wrap_content"
@@ -148,7 +81,7 @@
 		  			android:layout_height="wrap_content"
 		  			android:layout_weight="3"
 		  			android:paddingLeft="5dp"
-		  			android:text="Please provide your login details above"
+		  			android:text="Auto Login"
 		  			android:textColor="#000"
 		  			android:textSize="20dp">
 		  		</TextView>
@@ -156,8 +89,8 @@
 		  			android:id="@+id/autologin"
 		  			android:layout_width="wrap_content"
 		  			android:layout_height="wrap_content"
-		  			android:textOn="Change"
-		  			android:textOff="Save"/>
+		  			android:textOn="On"
+		  			android:textOff="Off"/>
 		  	</LinearLayout>
 		  	<TextView 
 		  		android:layout_width="fill_parent"
@@ -195,7 +128,7 @@
 		  	<TextView 
 		  		android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content" 
-		  		android:text="If it is ON, the media will be downloaded to the handset when you click Play Vedio or Play Audio"
+		  		android:text="Download media to the device."
 		  		android:textSize="13dp"
 		  		android:textColor="#555555"
 		  		android:paddingLeft="5dp"/>
@@ -233,7 +166,85 @@
 		  		android:textColor="#555555"
 		  		android:paddingLeft="5dp"/>
 	  	</LinearLayout>
+	  	<LinearLayout 
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:orientation="vertical"
+	  		android:gravity="center"
+	  		android:layout_marginTop="5dp">
+		  	<LinearLayout 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:orientation="horizontal"
+		  		android:gravity="center">
+		  		<TextView 
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_weight="3"
+		  			android:paddingLeft="5dp"
+		  			android:text="GPS Ping Services"
+		  			android:textColor="#000"
+		  			android:textSize="20dp">
+		  		</TextView>
+		  		<ToggleButton 
+		  			android:id="@+id/gpsping"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"/>
+		  	</LinearLayout>
+		  	<TextView 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content" 
+		  		android:text="Turn on and off the GPS Ping Services"
+		  		android:textSize="13dp"
+		  		android:textColor="#555555"
+		  		android:paddingLeft="5dp"/>
+	  	</LinearLayout>
   	</LinearLayout>
-  </ScrollView>
-    
-</LinearLayout>
+  </ScrollView> 
+  <LinearLayout 
+	  		android:layout_height="wrap_content" 
+	  		android:orientation="horizontal" 
+	  		android:layout_width="fill_parent" 
+	  		android:background="@drawable/bottombar" 
+	  		android:layout_below="@+id/config_layout" 
+	  		android:layout_alignParentBottom="true"
+	  		android:id="@+id/bottombar">
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="TagIt"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginLeft="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/tagit"/>
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="Options"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginLeft="1dp"
+	  			android:layout_marginRight="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/options"/>
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="Settings"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginRight="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/settings"/>
+	 </LinearLayout>
+</RelativeLayout>

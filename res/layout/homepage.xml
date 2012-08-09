@@ -3,67 +3,54 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:background="#E2E2E2"
+  android:background="#fff"
   android:id="@+id/homeLayout">
   <RelativeLayout 
   	android:layout_width="fill_parent"
-  	android:layout_height="32dp"
+  	android:layout_height="60dp"
   	android:layout_alignParentTop="true"
-  	android:background="@drawable/topmenu"
-  	android:id="@+id/topMenu">
-  	<LinearLayout 
-  	android:layout_height="wrap_content"
-  	android:layout_width="wrap_content"
-  	android:orientation="horizontal"
-  	android:layout_alignParentLeft="true"
-  	android:layout_centerVertical="true"
+  	android:background="#000000"
+  	android:id="@+id/topMenu"
   	android:gravity="center_vertical">
-  	<ImageView 
-  	android:src="@drawable/arrow_left"
-  	android:layout_width="wrap_content"
-  	android:layout_height="wrap_content"
-  	android:layout_marginLeft="5dp"/>
-	  	<TextView android:layout_height="wrap_content"
-	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
-	  	android:textSize="12dp"
-	  	android:text="Settings"
-	  	android:layout_marginLeft="5dp"/>
-	 </LinearLayout>
-	  	<TextView android:layout_height="wrap_content"
-	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
-	  	android:textSize="20dp"
-	  	android:textStyle="bold"
-	  	android:text="TagIt"
-	  	android:layout_centerInParent="true"/>
-	  <LinearLayout 
+  	<ImageButton 
+  		android:layout_height = "wrap_content"
+  		android:layout_width = "wrap_content"
+  		android:src="@drawable/logout_icon30"
+  		android:id="@+id/back"
+  		android:background="#000000"
+  		android:layout_alignParentLeft="true"
+  		android:layout_marginLeft="10dp"
+  		android:layout_marginTop="15dp"/>
+	 <LinearLayout 
   		android:layout_height="wrap_content"
   		android:layout_width="wrap_content"
   		android:orientation="horizontal"
   		android:layout_alignParentRight="true"
-  		android:layout_centerVertical="true"
-  		android:gravity="center_vertical"> 		
-	  	<TextView android:layout_height="wrap_content"
+  		android:gravity="center_vertical">
+  		<TextView android:layout_height="wrap_content"
 	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
+	  	android:textColor="#3399cc"
 	  	android:textSize="12dp"
-	  	android:text="Scanner"
-	  	android:layout_marginRight="5dp"/>
-	  	<ImageView 
-	  	android:src="@drawable/arrow_right"
-	  	android:layout_width="wrap_content"
-	  	android:layout_height="wrap_content"
-	  	android:layout_marginRight="5dp"/>
+	  	android:text="Tagging the Cloud"
+	  	android:layout_marginTop="10dp"/>
+	  	<ImageView android:layout_height="50dp"
+	  	android:layout_width="50dp"
+		android:src="@drawable/appicon57"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft = "5dp"/>
 	  </LinearLayout>
   </RelativeLayout>
-  <TextView android:layout_marginLeft="5dp"
-			android:layout_marginTop="10dp"
-			android:text="Options" android:layout_width="wrap_content"
-			android:textColor="#000000" android:textSize="20dp" android:textStyle="bold"
-			android:layout_height="wrap_content"
-			android:layout_below="@id/topMenu"
-			android:id="@+id/optionsLbl"></TextView>
+  <TextView 
+		android:layout_height = "55dp"
+		android:layout_width = "fill_parent"
+		android:gravity="center"
+		android:background="#3399cc"
+		android:text = "Options"
+		android:textColor="#fff"
+		android:textSize = "18dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/topMenu"
+		android:id="@+id/processName"/>
     <GridView    
     android:id="@+id/gridview"  
     android:layout_width="fill_parent"   
@@ -72,6 +59,54 @@
     android:verticalSpacing="12dip" 
     android:horizontalSpacing="10dp"
 	android:layout_marginTop="5dp"
-	android:layout_below="@id/optionsLbl"
+	android:layout_below="@+id/processName"
+	android:background="#b9d4ef"
+	android:paddingBottom="120dp"
     /> 
+    <LinearLayout 
+	  		android:layout_height="wrap_content" 
+	  		android:orientation="horizontal" 
+	  		android:layout_width="fill_parent" 
+	  		android:background="@drawable/bottombar" 
+	  		android:layout_below="@+id/gridview" 
+	  		android:layout_alignParentBottom="true"
+	  		android:id="@+id/bottombar">
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="TagIt"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginLeft="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/tagit"/>
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="Options"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginLeft="1dp"
+	  			android:layout_marginRight="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/options"/>
+	  		<Button 
+	  			android:layout_height="fill_parent"
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1"
+	  			android:background="@drawable/bottombarbtn_checked"
+	  			android:textColor="#fff"
+	  			android:textSize="12dp"
+	  			android:text="Settings"
+	  			android:layout_marginTop="1dp"
+	  			android:layout_marginRight="1dp"
+	  			android:layout_marginBottom="1dp"
+	  			android:id="@+id/settings"/>
+	 </LinearLayout>
 </RelativeLayout>

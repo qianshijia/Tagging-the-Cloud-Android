@@ -3,31 +3,90 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#E2E2E2"
+    android:background="#fff"
     >
 	<RelativeLayout 
   	android:layout_width="fill_parent"
-  	android:layout_height="32dp"
+  	android:layout_height="60dp"
   	android:layout_alignParentTop="true"
-  	android:background="@drawable/topmenu"
+  	android:background="#000000"
   	android:id="@+id/topMenu"
   	android:gravity="center_vertical">
-	  	<TextView android:layout_height="wrap_content"
+  	<ImageButton 
+  		android:layout_height = "wrap_content"
+  		android:layout_width = "wrap_content"
+  		android:src="@drawable/logout_icon30"
+  		android:id="@+id/logoutbtn"
+  		android:background="#000000"
+  		android:layout_alignParentLeft="true"
+  		android:layout_marginLeft="10dp"
+  		android:layout_marginTop="15dp"/>
+	 <LinearLayout 
+  		android:layout_height="wrap_content"
+  		android:layout_width="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_alignParentRight="true"
+  		android:gravity="center_vertical">
+  		<TextView android:layout_height="wrap_content"
 	  	android:layout_width="wrap_content"
-	  	android:textColor="#fff"
-	  	android:textSize="20dp"
-	  	android:textStyle="bold"
-	  	android:text="TagIt"
-	  	android:layout_centerInParent="true"
-	  	android:gravity="center_vertical"/>
+	  	android:textColor="#3399cc"
+	  	android:textSize="12dp"
+	  	android:text="Tagging the Cloud"
+	  	android:layout_marginTop="10dp"/>
+	  	<ImageView android:layout_height="50dp"
+	  	android:layout_width="50dp"
+		android:src="@drawable/appicon57"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft = "5dp"/>
+	  </LinearLayout>
   </RelativeLayout>
+  <LinearLayout 
+  	android:layout_height="wrap_content"
+  	android:layout_width="fill_parent"
+  	android:background="#3399cc"
+  	android:orientation="vertical">
+  		<TextView 
+		android:layout_height = "35dp"
+		android:layout_width = "fill_parent"
+		android:gravity="center"		
+		android:text = "Please Provide Login Details"
+		android:textColor="#fff"
+		android:textSize = "18dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/topMenu"/>
+		<LinearLayout 
+  		android:layout_height="wrap_content"
+  		android:layout_width="fill_parent"
+  		android:background="#fff"
+  		android:orientation="horizontal"
+  		android:layout_marginBottom="15dp"
+  		android:layout_marginLeft="60dp"
+  		android:layout_marginRight="60dp"
+  		android:gravity="center_vertical">
+  			<TextView 
+  			android:layout_height="wrap_content"
+  			android:layout_width="wrap_content"
+  			android:textColor="#000"
+  			android:text="Auto Login"
+  			android:textSize="16dp"
+  			android:layout_marginLeft="5dp"
+  			android:layout_marginRight="65dp"/>
+  			<ToggleButton 
+		  			android:id="@+id/autologin"
+		  			android:layout_width="50dp"
+		  			android:layout_height="wrap_content"
+		  			android:textOn="On"
+		  			android:textOff="Off"/>
+  		</LinearLayout>
+	</LinearLayout>
 	<RelativeLayout android:id="@+id/TableLayout0111"
 		 android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:layout_marginTop="25dp"
+		android:layout_height="fill_parent" android:layout_marginTop="5dp"
+		android:background="#b9d4ef"
 		>
 
 		<TextView android:layout_marginLeft="5dp"
-			android:layout_marginTop="65dp" android:id="@+id/lblUserName"
+			android:layout_marginTop="15dp" android:id="@+id/lblUserName"
 			android:text="Username:" android:layout_width="wrap_content"
 			android:textColor="#000000" android:textSize="22dp"
 			
@@ -37,23 +96,34 @@
 			android:layout_marginLeft="5dp"
 			android:layout_marginRight="5dp"
 			android:layout_width="fill_parent"
-			android:textColor="#000000" android:textSize="24dp" android:background="@drawable/rectc"
-			android:layout_height="wrap_content">
+			android:textColor="#000000" android:textSize="24dp" android:background="@drawable/buttons"
+			android:layout_height="wrap_content"
+			android:singleLine="true">
 
 		</EditText>
 
 
-		<TextView android:layout_marginLeft="5dp"
-			android:layout_marginTop="15dp" android:id="@+id/lblPassword"
-			android:text="Password:" android:layout_width="wrap_content"
-			android:textColor="#000000" android:textSize="22dp"
-			android:layout_below="@+id/txtUsername" android:layout_height="wrap_content"></TextView>
-		<EditText android:id="@+id/txtPassword"
+		<TextView 
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="15dp" 
+			android:id="@+id/lblPassword"
+			android:text="Password:" 
+			android:layout_width="wrap_content"
+			android:textColor="#000000" 
+			android:textSize="22dp"
+			android:layout_below="@+id/txtUsername" 
+			android:layout_height="wrap_content"></TextView>
+		<EditText 
+			android:id="@+id/txtPassword"
 			android:layout_below="@+id/lblPassword"
 			android:layout_marginLeft="5dp"
 			android:layout_width="fill_parent" 
-			android:textColor="#000000" android:textSize="24dp" android:inputType="textPassword"
-			android:background="@drawable/rectc" android:layout_height="wrap_content">
+			android:textColor="#000000" 
+			android:textSize="24dp" 
+			android:inputType="textPassword"
+			android:background="@drawable/buttons" 
+			android:layout_height="wrap_content"
+			android:singleLine="true">
 
 		</EditText>
 
@@ -61,7 +131,9 @@
 			android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
 			android:id="@+id/btnLogin" android:layout_width="fill_parent"
 			android:layout_centerHorizontal="true" android:layout_height="wrap_content"
-			android:text="Login" android:layout_below="@+id/txtPassword" android:textSize="24dp"></Button>
+			android:text="Login" android:layout_below="@+id/txtPassword" android:textSize="24dp"
+			android:background="@drawable/nextbtn"
+			android:textColor="#fff"></Button>
 
 		
 	</RelativeLayout>

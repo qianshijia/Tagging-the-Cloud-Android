@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TagIt</string>
-    <string name="video_page_msg">Please watch this video and answer the question on the next page.</string>
-    <string name="audio_page_msg">Please listen to this audio and answer the question on the next page.</string>
+    <string name="app_name">Tagging the Cloud</string>
+    <string name="startquestions">http://services.taggingthecloud.com.au/TGTService/index/11</string>
+    <string name="processtag_url">http://services.taggingthecloud.com.au/TGTService/index/10</string>
+    <string name="login_url">http://services.taggingthecloud.com.au/TGTService/login</string>
+    <string name="gpsping_url">http://services.taggingthecloud.com.au/TGTService/index/42</string>
+    <string name="media_process_url">http://services.taggingthecloud.com.au/TGTService/index/21</string>
+    <string name="plain_process_url">http://services.taggingthecloud.com.au/TGTService/index/12</string>
 </resources>
